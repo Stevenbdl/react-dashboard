@@ -1,0 +1,50 @@
+.side-bar {
+    height: 100vh;
+    position: fixed;
+    width: 240px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: #011b33;
+    color: #fff;
+    padding-left: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.side-bar > li {
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+.side-bar > li:hover {
+    color: #011b33;
+    background: #fff;
+}
+
+/*Toggle side bar style*/
+
+.toggle-side-bar {
+    position: fixed;
+    top: 50%;
+    margin-left: 240px;
+    background: none;
+    color: #011b33;
+    border: none;
+    cursor: pointer;
+    transition: margin-left 0.5s;
+}
+.toggle-side-bar i {
+    font-size: 40px;
+}
+
+.toggle-side-bar:focus {
+    outline: 0;
+}

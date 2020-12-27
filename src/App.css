@@ -1,0 +1,9 @@
+body {
+    background-color: #F5F6F7;
+}
+
+
+.app-content {
+    margin-left: 255px;
+    transition: margin-left 0.5s;
+}

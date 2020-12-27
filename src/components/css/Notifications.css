@@ -1,0 +1,30 @@
+.panel-notifications {
+    display: none;
+    position: absolute;
+    right: 100px;
+    top: 90px;
+    background: #011B33;
+    color: #fff;
+    padding: 0 10px 10px 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.title-notifi {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.panel-notifications > li {
+    display: flex;
+    list-style: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .5s;
+}
+
+.panel-notifications > li:hover {
+    transition: .5s;
+    font-size: 18px;
+}

@@ -1,0 +1,26 @@
+.navbar {
+    margin-left: 240px;
+    transition: margin-left 0.5s;
+}
+.fas {
+    font-size: 25px;
+    margin: 5px 5px ;
+}
+
+.fas > .badge {
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.notifications {
+    display: flex;
+}
+
+.notifications button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.notifications button:focus {
+    outline: 0;
+}

@@ -1,0 +1,29 @@
+.panel-messages {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 90px;
+    background: #011B33;
+    color: #fff;
+    padding: 0 10px 10px 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.title-msg {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.panel-messages > li {
+    display: flex;
+    list-style: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.panel-messages > li:hover {
+    transition: .5s;
+    font-size: 18px;
+}

@@ -1,0 +1,52 @@
+
+/*earnings panel styles*/
+.earnings {
+    display: flex;
+    flex-flow: row wrap;
+}
+.earnings > .card {
+    width: 20rem;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.earnings > .card > .card-title {
+    text-transform: uppercase;
+}
+.earnings > .card > p {
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+
+/*cards inside earnings styles */
+.earned-monthly {
+    border-left: 4px solid #00C9E9;
+}
+
+.earned-monthly > .card-title {
+    color: #00C9E9; 
+}
+
+.earned-annual {
+    border-left: 4px solid #9800E9;
+}
+
+.earned-annual > .card-title {
+    color: #9800E9; 
+}
+
+.clients {
+    border-left: 4px solid #00E9B2;
+}
+
+.clients > .card-title {
+    color: #00E9B2;
+}
+
+.projects {
+    border-left: 4px solid #E90094;
+}
+
+.projects > .card-title {
+    color: #E90094;
+}
