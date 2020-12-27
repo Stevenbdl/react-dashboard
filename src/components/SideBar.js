@@ -31,6 +31,7 @@ export default class SideBar extends Component {
         this.setState({ toggle: !this.state.toggle });
     }
     render() {
+        
         return (
             <div className="">
                 <button id="toggleSideBarBtn" type="button" className="toggle-side-bar" onClick={this.toggleSideBar}>
@@ -38,10 +39,10 @@ export default class SideBar extends Component {
                 </button>
                 <div id="side-bar" className="side-bar">
                     <h1 className="text-uppercase" style={{ marginBottom: "120px" }}>dashboard</h1>
-                    <li><Link to="/"><i className="fas fa-home"></i>home</Link></li>
-                    <li><Link to="/charts"><i className="fas fa-chart-pie"></i>charts</Link></li>
-                    <li><Link to="/users"><i className="fas fa-users"></i>users</Link></li>
-                    <li><Link to="/cards"><i className="fas fa-id-card"></i>cards</Link></li>
+                    <li><Link to="/dashboard"><i className="fas fa-home"></i>home</Link></li>
+                    <li><Link to="/dashboard/charts"><i className="fas fa-chart-pie"></i>charts</Link></li>
+                    <li><Link to="/dashboard/users"><i className="fas fa-users"></i>users</Link></li>
+                    <li><Link to="/dashboard/cards"><i className="fas fa-id-card"></i>cards</Link></li>
                 </div>
             </div>
         )

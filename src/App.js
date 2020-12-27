@@ -20,10 +20,10 @@ export default class App extends Component {
         <Router>
           <SideBar />
           <div id="app-content" className="app-content">
-            <Route exact path='/' component={Home} />
-            <Route path='/charts' component={Charts} />
-            <Route path='/users' component={Users} />
-            <Route path='/cards' component={Cards} />
+            <Route exact path={['/','/dashboard']} component={Home} />
+            <Route path={['/charts','/dashboard/charts']} component={Charts} />
+            <Route path={['/users', '/dashboard/users']} component={Users} />
+            <Route path={['cards', '/dashboard/cards']} component={Cards} />
           </div>
         </Router>
       </div>
