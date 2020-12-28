@@ -1,0 +1,15 @@
+.home .services .progress {
+    margin-bottom: 20px;
+}
+
+.home .services{
+    width: 30rem;
+}
+
+.details {
+    width: 20rem;
+    margin-left: 10px;
+}
+.home .details .card-body {
+    font-family: 'Quicksand', sans-serif;
+}
