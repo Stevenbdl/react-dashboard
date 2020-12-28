@@ -7,40 +7,46 @@ import React, { Component } from 'react'
 import './css/Messages.css'
 
 export default class Messages extends Component {
-    
-    togglePanelMsg = (e) => {
-        let panel = document.getElementById('panel-msg');
-        if (panel.style.display === 'none' || panel.style.display === '') {
-            panel.classList.remove('animate__bounceOut');//remove fadeOut animation
-            panel.classList.add('animate__bounceIn');
-            panel.style.display = 'block';
-        } else {
-            panel.classList.remove('animate__bounceIn');//remove fadeIn animation
-            panel.classList.add('animate__bounceOut');
-            setTimeout(() => {
-                panel.style.display = 'none';
-            }, 1000);
-        }
+    state = {
+        clickMessages : false
     }
-    clickOutSideButton = (e) => {
-        
+    clickMessages = (e) => {
+        this.setState({ clickMessages : true });
+    }
+    togglePanelMessages = (e) => {
+        //console.log("click 1");
+        //console.log(e);
+        let panel = document.getElementById('messages');
+        if(this.state.clickMessages===false) {
+            panel.style.display = "none";
+        }else {
+            if(panel.style.display==='none'||panel.style.display==='') {
+                panel.style.display = 'block';
+                panel.classList.add('animate__bounceIn');
+            }else {
+                panel.style.display = 'none';
+            }
+        }
+        this.setState({ clickMessages : false });
     }
     componentDidMount() {
-        window.addEventListener('click', this.clickOutSideButton);
+        window.addEventListener('click', this.togglePanelMessages);
+    }
+    componentWillUnmount() {
+        window.removeEventListener('click', this.togglePanelMessages);
     }
     render() {
         
         return (
-            <div className="">
-                <button id="msgButton" type="button" onClick={this.togglePanelMsg}>
+            <div className="dropdown-messages">
+                <button id="msgButton" type="button" onClick={this.clickMessages}>
                     <i className="fas fa-envelope"><span className="badge badge-danger">3</span></i>
                 </button>
-                <ul id="panel-msg" className="panel-messages animate__animated">
-                    <h1 className="title-msg">Messages</h1>
-                    <li>Message #1</li>
-                    <li>Message #2</li>
-                    <li>Message #3</li>
-                </ul>
+                <div id="messages" className="messages-content animate__animated">
+                    <a href="/">Message from Gmail</a>
+                    <a href="/">Message from Google</a>
+                    <a href="/">10 calls</a>
+                </div>
             </div>
         )
     }

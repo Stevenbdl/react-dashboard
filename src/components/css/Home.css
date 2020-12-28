@@ -13,3 +13,9 @@
 .home .details .card-body {
     font-family: 'Quicksand', sans-serif;
 }
+
+.home .card-header {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+}

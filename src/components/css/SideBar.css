@@ -13,7 +13,7 @@
     transition: 0.5s;
 }
 
-.side-bar > li {
+.side-bar  li {
     list-style: none;
     margin-top: 20px;
     margin-left: 10px;
@@ -24,7 +24,7 @@
     padding-left: 0;
 }
 
-.side-bar > li:hover {
+.side-bar  li:hover {
     color: #011b33;
     background: #fff;
 }
@@ -40,6 +40,7 @@
     border: none;
     cursor: pointer;
     transition: margin-left 0.5s;
+    z-index: 100;
 }
 .toggle-side-bar i {
     font-size: 40px;
@@ -47,4 +48,19 @@
 
 .toggle-side-bar:focus {
     outline: 0;
+}
+
+@media only screen and (max-width:900px) {
+    .side-bar-title {
+        display: none;
+    }
+    .side-bar {
+        width: 0;
+    }
+    .fas {
+        margin-right: 15px;
+    }
+    .toggle-side-bar {
+        margin-left: 0;
+    }
 }

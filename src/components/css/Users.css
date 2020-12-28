@@ -1,0 +1,20 @@
+.img-circle {
+    width: 100px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.users .card {
+    width: 200px;
+    text-align: center;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    transition: transform 0.3s;
+    margin-bottom: 10px;
+}
+
+.users .card:hover {
+    transform: scale(1.10);
+    color: #fff;
+    background-color: #000;
+}

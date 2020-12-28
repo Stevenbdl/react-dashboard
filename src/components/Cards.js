@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+
+// css 
+import './css/Cards.css'
+
 export default class Cards extends Component {
     render() {
         return (

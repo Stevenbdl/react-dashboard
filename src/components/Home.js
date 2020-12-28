@@ -12,7 +12,7 @@ export default class Home extends Component {
                     <div className="card services shadow mb-4">
                         <div className="card-header">
                             Services
-                    </div>
+                        </div>
                         <div className="card-body">
                             <h5>Web development</h5>
                             <div className="progress">

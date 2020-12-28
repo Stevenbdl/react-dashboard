@@ -17,3 +17,10 @@ body {
     text-transform: uppercase;
     border-bottom: 2px solid #011B33;
 }
+
+
+@media only screen and (max-width:900px) {
+    .app-content {
+        margin-left: 0;
+    }
+}

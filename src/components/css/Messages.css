@@ -1,29 +1,36 @@
-.panel-messages {
+.dropdown-messages {
+    position: relative;
+    display: inline-block;
+}
+
+.messages-content {
     display: none;
     position: absolute;
-    right: 40px;
-    top: 90px;
-    background: #011B33;
-    color: #fff;
-    padding: 0 10px 10px 10px;
-    border-radius: 10px;
-    z-index: 1;
-}
-
-.title-msg {
-    margin-bottom: 20px;
+    right: 20px;
+    background-color: #011B33;
+    min-width: 200px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 20px;
+    z-index: 1;
+    border-radius: 20px;
 }
 
-.panel-messages > li {
-    display: flex;
-    list-style: none;
-    padding: 10px 10px;
-    cursor: pointer;
-    transition: .5s;
+.messages-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: transform .3s;
 }
 
-.panel-messages > li:hover {
-    transition: .5s;
-    font-size: 18px;
+.messages-content a:hover {
+    transform: scale(1.01);
+}
+
+@media only screen and (max-width:900px) {
+    .messages-content {
+        right: 0;
+        left: 15px;
+    }
 }
