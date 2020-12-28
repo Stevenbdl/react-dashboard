@@ -7,6 +7,7 @@ export default class Home extends Component {
     render() {
         return (
             <div className="home container">
+                <h6 className="title-section">Home</h6>
                 <div className="d-flex justify-content-start flex-wrap">
                     <div className="card services shadow mb-4">
                         <div className="card-header">
@@ -35,7 +36,7 @@ export default class Home extends Component {
                         </div>
                     </div>
 
-                    <div className="card details">
+                    <div className="card details shadow mb-4">
                         <div className="card-header">
                             Details
                         </div>
@@ -46,6 +47,7 @@ export default class Home extends Component {
                             as Web Development.
                         </div>
                     </div>
+                    
                 </div>
             </div>
         )

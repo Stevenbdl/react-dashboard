@@ -13,6 +13,7 @@ export default class Charts extends Component {
     render() {
         return (
             <div className="container">
+                <h6 className="title-section">Charts</h6>
                 <div className="d-flex justify-content-around earnings">
                     <div className="card earned-monthly">
                         <h5 className="card-title">Earned monthly</h5>

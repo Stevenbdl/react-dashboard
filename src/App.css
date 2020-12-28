@@ -7,3 +7,13 @@ body {
     margin-left: 255px;
     transition: margin-left 0.5s;
 }
+
+.title-section {
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #011B33;
+}
