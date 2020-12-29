@@ -13,6 +13,13 @@ import Cards from './components/Cards'
 import './App.css'
 
 export default class App extends Component {
+  componentDidMount() {
+    function load(e) {
+      console.log("load");
+      window.location.href = "https://stevenbdl.github.io/react-dashboard";
+    }
+    window.onload = load;
+  }
   render() {
     return (
       <div>
