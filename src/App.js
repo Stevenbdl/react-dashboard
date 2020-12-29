@@ -21,9 +21,9 @@ export default class App extends Component {
           <SideBar />
           <div id="app-content" className="app-content">
             <Route exact path={['/react-dashboard', '/react-dashboard/home']} component={Home} />
-            <Route path={'/react-dashboard/charts'} component={Charts} />
-            <Route path={'/react-dashboard/users'} component={Users} />
-            <Route path={'/react-dashboard/cards'} component={Cards} />
+            <Route exact path='/react-dashboard/charts' component={Charts} />
+            <Route exact path='/react-dashboard/users' component={Users} />
+            <Route exact path='/react-dashboard/cards' component={Cards} />
           </div>
         </Router>
       </div>
