@@ -13,13 +13,6 @@ import Cards from './components/Cards'
 import './App.css'
 
 export default class App extends Component {
-  componentDidMount() {
-    function load(e) {
-      console.log("load");
-      window.location.href = "https://stevenbdl.github.io/react-dashboard";
-    }
-    window.onload = load;
-  }
   render() {
     return (
       <div>
@@ -27,7 +20,7 @@ export default class App extends Component {
         <Router>
           <SideBar />
           <div id="app-content" className="app-content">
-            <Route exact path={'/react-dashboard'} component={Home} />
+            <Route exact path={['/react-dashboard', '/react-dashboard/home']} component={Home} />
             <Route path={'/react-dashboard/charts'} component={Charts} />
             <Route path={'/react-dashboard/users'} component={Users} />
             <Route path={'/react-dashboard/cards'} component={Cards} />
