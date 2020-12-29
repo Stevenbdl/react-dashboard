@@ -42,10 +42,10 @@ export default class SideBar extends Component {
                 </button>
                 <div id="side-bar" className="side-bar">
                     <h1 className="side-bar-title text-uppercase" style={{ marginBottom: "120px" }}>dashboard</h1>
-                    <Link to="/react-dashboard"><li><i className="fas fa-home"></i>home</li></Link>
-                    <Link to="/react-dashboard/charts"><li><i className="fas fa-chart-pie"></i>charts</li></Link>
-                    <Link to="/react-dashboard/users"><li><i className="fas fa-users"></i>users</li></Link>
-                    <Link to="/react-dashboard/cards"><li><i className="fas fa-id-card"></i>cards</li></Link>
+                    <Link to="/"><li><i className="fas fa-home"></i>home</li></Link>
+                    <Link to="/charts"><li><i className="fas fa-chart-pie"></i>charts</li></Link>
+                    <Link to="/users"><li><i className="fas fa-users"></i>users</li></Link>
+                    <Link to="/cards"><li><i className="fas fa-id-card"></i>cards</li></Link>
                 </div>
             </div>
         )
